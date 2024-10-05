@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4ef;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-family: 'Cursive';
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style-type: disc;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+/*rice*/
+.rice-selection {
+    text-align: center;
+    padding: 80px;
+}
+
+.vegrice-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    float: right; /* Aligns the image to the right */
+    margin-right: 10px; /* Add space between the image and the text */
+}
+
+.story {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.story h2 {
+    color: #333;
+}
+
+.story p {
+    color: #555;
+}
+
+/*group*/
+.group-selection {
+    text-align: center;
+    padding: 80px;
+}
+
+.group-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    float: right; /* Aligns the image to the right */
+    margin-right: 10px; /* Add space between the image and the text */
+}
+
+.story-group {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.story-group h2 {
+    color: #333;
+}
+
+.story-group p {
+    color: #555;
+}
+

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-family: 'Cursive';
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style-type: disc;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+/* for responsiveness  for text*/
+body, html {
+    height: 100%;
+    font-family: 'Serif', serif;
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.address {
+    font-size: 1rem;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+
+.main-text {
+    display: flex;
+    gap: 40px;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.main-text span {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.main-text span:hover {
+    opacity: 0.8;
+}
+
+/* Optional: Add a slight blur effect to the background if desired */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+
+/*for responsiveness */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('home1.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-attachment: fixed; /* Optional: keeps the background fixed during scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensure content scales properly on smaller screens */
+@media (max-width: 768px) {
+    .main-text {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+/*footer part*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f9a825; 
+}
+
+.contact-details p strong {
+    color: #f9a825; /* Custom highlight color */
+}
+
+@media (max-width: 768px) {
+    .footer-container{
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+
+/*full  responsiveness for everything*/

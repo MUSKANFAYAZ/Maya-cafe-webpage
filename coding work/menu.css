@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-family: 'Cursive';
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style-type: disc;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Menu Section */
+.menu-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu-categories {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu-categories li {
+    margin: 0 15px;
+}
+
+.menu-categories li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu-categories li a.active {
+    border-bottom: 2px solid black;
+}
+
+.menu-categories li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
