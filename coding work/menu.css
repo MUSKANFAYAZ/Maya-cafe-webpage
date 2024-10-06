@@ -106,7 +106,61 @@ body {
     gap: 20px;
 }
 
-
+.menu-grid {
+    display: flex; /* or display: grid; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    width: 100%; /* Default to full width */
+    max-width: 300px; /* Restrict maximum width */
+    margin: 10px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .menu-item p {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .menu-item {
+      max-width: 45%; /* Adjust size to fit more items per row */
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .menu-item {
+      max-width: 100%; /* Stack items vertically */
+    }
+  
+    .menu-item p {
+      font-size: 14px; /* Adjust text size */
+    }
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  
+  /* For mobile, reduce the text size */
+@media (max-width: 480px) {
+    .menu-item p {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+  }
+  
 
 .menu-item {
     background-color: white;
